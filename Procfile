@@ -1,1 +1,1 @@
-web: rendertron
+web: node bin/rendertron

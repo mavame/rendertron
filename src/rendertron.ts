@@ -103,8 +103,16 @@ export class Rendertron {
     }
 
     const mobileVersion = "mobile" in ctx.query ? true : false;
+    const dimensions = {
+      width: Number(ctx.query["width"]) || 1000,
+      height: Number(ctx.query["height"]) || 1000
+    };
 
-    const serialized = await this.renderer.serialize(url, mobileVersion);
+    const serialized = await this.renderer.serialize(
+      url,
+      dimensions,
+      mobileVersion
+    );
     // Mark the response as coming from Rendertron.
     ctx.set("x-renderer", "rendertron");
     ctx.status = serialized.status;

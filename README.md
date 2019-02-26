@@ -2,6 +2,7 @@
 
 - Setup to be run/hosted on Heroku per these [instructions](https://github.com/GoogleChrome/rendertron/issues/90#issuecomment-464885219)
 - Allows dimensions to be passed to /render endpoint
+- Abort network requests for images and stylesheets [read more](https://developers.google.com/web/tools/puppeteer/articles/ssr)
 
 # Rendertron [![Build status](https://travis-ci.org/GoogleChrome/rendertron.svg?branch=master)](https://travis-ci.org/GoogleChrome/rendertron) [![NPM rendertron package](https://img.shields.io/npm/v/rendertron.svg)](https://npmjs.org/package/rendertron)
 
